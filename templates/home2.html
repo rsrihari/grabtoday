@@ -1,0 +1,8 @@
+<h2>Hi {{ name }}</h2>
+
+{% for reco in recos%}
+
+<h3>{{reco.1}} | {{ reco.2}}<h3>
+<p>{{reco.3}}<p>
+<a href="/rate?recid={{reco.0}}&userid={{userid}}"><button type="button">Rate</button></a>
+{% endfor%}
